@@ -1,18 +1,17 @@
 # SquareLine_Project
 
-A application developed using C++ with a UI designed in SquareLine Studio and based on the LVGL framework.
+A graphical user interface (GUI) project developed using **LVGL** and **SquareLine Studio**. The UI design is created in Figma, exported through SquareLine Studio, and developed using Visual Studio Code in a WSL (Ubuntu) environment.
 
 ---
 
 ## 🛠️ Technology Stack
 
-- **Language:** C++
-- **Framework:** Qt 6 (Qt Quick / QML)
-- **UI Designer:** SquareLine Studio
+- **Programming Language:** C
 - **Graphics Library:** LVGL
-- **IDE:** Visual Studio Code
-- **Build System:** CMake
-- **Operating System:** Ubuntu (WSL) / Windows
+- **UI Designer:** SquareLine Studio
+- **UI Design:** Figma
+- **Code Editor:** Visual Studio Code
+- **Operating System:** Ubuntu (WSL)
 - **Version Control:** Git
 
 ---
@@ -21,13 +20,13 @@ A application developed using C++ with a UI designed in SquareLine Studio and ba
 
 ```
 SquareLine_Project/
-├── main.cpp
-├── main.qml
-├── CMakeLists.txt
-├── src/
 ├── assets/
 ├── images/
-└── README.md
+├── src/
+├── ui/
+├── build/
+├── README.md
+└── CMakeLists.txt
 ```
 
 ---
@@ -39,23 +38,18 @@ SquareLine_Project/
 
 ---
 
-## ⚙️ Setup
+## 🔧 Prerequisites
 
-### Install Required Packages (Ubuntu/WSL)
+Install the following tools:
 
-```bash
-sudo apt update
-
-sudo apt install -y \
-build-essential \
-cmake \
-git \
-ninja-build \
-qt6-base-dev \
-qt6-declarative-dev \
-qt6-tools-dev \
-qt6-tools-dev-tools
-```
+- Visual Studio Code
+- WSL (Ubuntu)
+- GCC Compiler
+- CMake
+- Git
+- LVGL
+- SquareLine Studio
+- Figma
 
 ---
 
@@ -79,27 +73,23 @@ From the project root:
 ./build/SquareLine_Project
 ```
 
-Or, if you are already inside the `build` directory:
-
-```bash
-./SquareLine_Project
-```
-
 ---
 
-## 🧰 Development Tools
+## 📋 Development Workflow
 
-- Qt Creator (optional)
-- Visual Studio Code
-- CMake
-- Git
-- GDB (Debugger)
-- WSL (Ubuntu)
+1. Design the UI in **Figma**.
+2. Import the design into **SquareLine Studio**.
+3. Export the LVGL project.
+4. Open the project in **Visual Studio Code**.
+5. Build the project using **CMake**.
+6. Run the application in **WSL (Ubuntu)**.
 
 ---
 
 ## 📌 Notes
 
-- Keep the project inside the WSL filesystem (`~/workspace`) for better build performance.
-- Windows 11 with WSLg supports running the Qt GUI directly.
-- Images used in this README are stored in the `images/` folder.
+- UI layouts are designed in **Figma**.
+- The interface is generated using **SquareLine Studio**.
+- The application is built with the **LVGL** graphics library.
+- Development is performed using **Visual Studio Code** in **WSL (Ubuntu)**.
+
