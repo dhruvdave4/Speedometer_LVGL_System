@@ -1,6 +1,6 @@
 # SquareLine_Project
 
-A Qt/QML application developed using C++ with a UI designed in SquareLine Studio and based on the LVGL framework.
+A application developed using C++ with a UI designed in SquareLine Studio and based on the LVGL framework.
 
 ---
 
